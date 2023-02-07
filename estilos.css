@@ -1,0 +1,284 @@
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'Roboto', sans-serif;
+}
+.Impresion-area{
+    width: 80%;
+    margin: 20px auto;
+}
+.Impresion-area .Encabezado{
+    width: 100%;
+    height: 150px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.Encabezado img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: none;
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+}
+.Encabezado img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px black;
+
+}
+.Encabezado-text{
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+.Encabezado-text h1{
+    font-size: 80px;
+    font-weight: normal;
+
+}
+.Encabezado-text p{
+    font-size: 30px;
+    color: aliceblue;
+    padding-left: 10px;
+}
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Izquierda-area{
+    width: 30%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Izquierda-area .Contacto{
+    margin-top: 130px;
+    padding: 0 30px;
+}
+.Contacto h4{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+.Contacto h5{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.Contacto p{
+    font-size: 17px;
+}
+.Habilidades{
+    width: 300px;
+    margin: auto;
+    border: none;
+    padding: 10px;
+}
+.container{
+    width: 100%;
+    background-color: #ddd;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.skills{
+    text-align: right;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+.equipo{
+    background-color: blue;
+    animation: fillequipo 2s forwards;
+}
+.Resolver{
+    background-color: rgb(96, 215, 231);
+    animation: fillResolver 2s forwards;
+}
+.Informatica{
+    background-color: rgb(46, 250, 91);
+    animation: fillInformatica 2s forwards;
+}
+.Administrar{
+    background-color: rgb(253, 185, 37);
+    animation: fillAdministrar 2s forwards;
+}
+.Responsabilidad{
+    background-color: rgb(243, 62, 30);
+    animation: fillResponsabilidad 2s forwards;
+}
+.Comunicativo{
+    background-color: rgb(253, 37, 188);
+    animation: fillComunicativo 2s forwards;
+}
+.Proactivo{
+    background-color: rgb(119, 91, 91);
+    animation: fillProactivo 2s forwards;
+}
+@keyframes fillequipo{
+    0%{width: 0;}
+    100%{width: 95%;}
+}
+@keyframes fillResolver{
+    0%{width: 0;}
+    100%{width: 90%;}
+}
+@keyframes fillInformatica{
+    0%{width: 0;}
+    100%{width: 70%;}
+}
+@keyframes fillAdministrar{
+    0%{width: 0;}
+    100%{width: 85%;}
+}
+@keyframes fillResponsabilidad{
+    0%{width: 0;}
+    100%{width: 98%;}
+}
+@keyframes fillComunicativo{
+    0%{width: 0;}
+    100%{width: 95%;}
+}
+@keyframes fillProactivo{
+    0%{width: 0;}
+    100%{width: 97%;}
+}
+
+.Derecha-area{
+    width: 70%;
+    padding: 50px;
+}
+.Derecha-area h1{
+    font-size: 35px;
+    font-weight: normal;
+}
+.Derecha-area h1 span{
+    margin-right: 30px;
+    font-size: 50px;
+    color: lightgray;
+}
+.Derecha-area p{
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: gray;
+    margin-top: 10px;
+
+}
+.Trabajo .Trabajo-grupo{
+    position: relative;
+}
+.Trabajo-grupo h2{
+    font-size: 24px;
+    padding-left: 70px;
+    font-weight: normal;
+}
+.Trabajo-grupo h3{
+    font-size: 22px;
+    padding-left: 70px;
+    font-weight: normal;
+}
+.Trabajo-grupo h4{
+    font-size: 18px;
+    padding-left: 70px;
+    font-weight: normal;
+    color: gray;
+}
+.Trabajo-grupo span{
+    font-size: 18px;
+    padding-left: 70px;
+
+}
+.Trabajo-grupo li{
+    padding-left: 70px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+.Educacion{
+    margin-top: 30px;
+}
+.Edu-grupo{
+    position: relative;
+    top: 10px;
+}
+.Edu-grupo1{
+    position: relative;
+    top: 10px;
+
+}
+.Edu-grupo h3{
+    padding-left: 80px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+.Edu-grupo span{
+    padding-left: 80px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.Edu-grupo h4{
+    padding-left: 80px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+.Edu-grupo1 h3{
+    padding-left: 80px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.Edu-grupo1 li{
+    padding-left: 80px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+button{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 140px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background-color: black;
+    box-shadow: 0 0 30px rgb(63, 20, 20);
+
+}
+
+@media print {
+    body *{
+        visibility: hidden;
+    }
+    .Impresion-area *{
+        visibility: visible;
+    }
+}
